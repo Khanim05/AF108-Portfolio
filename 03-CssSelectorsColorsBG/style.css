@@ -1,0 +1,87 @@
+/* 1.//universal selector */
+*{
+    background-color: rgb(87, 87, 134);
+/* 2.//element selector */
+}
+p{
+    color: rgb(99, 0, 0);
+}
+/* 3.//class selector */
+.one{
+    color: rgb(0, 0, 0);
+}
+/* 4.//id selector */
+#two{
+    color: rgb(255, 255, 255);
+}
+/* 5.//element class selector */
+div.one{
+    text-align: center;
+    color: silver;
+}
+/* 6.//grup halinda class selector */
+p,div{
+    font-size: 20px;
+}
+/* 7.//div in icinde olan p elementini secir */
+div p{
+    text-align: center;
+    color: rgb(92, 41, 5);
+    font-weight: bold;
+}
+/* 8.// novbeti setire oturur */
+div +p{
+    text-align: center;
+}
+/* 9.//novbeti setirdeki butun p elementlerini secir */
+div ~ p {
+  background-color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 10px;
+  }
+  /* 10.//:first-of-type listin ilk elementini secir */
+ul li:first-of-type{
+    color: antiquewhite;
+  }
+/* 11.// uzerine geldikde ne deyisirikse onu gosderir */
+p:hover{
+    font-size: 40px;
+}
+/* 12.// send edende rengi deyisir */
+a:active {
+    background-color: yellow;
+  }
+/* 13.//pdeki ilk herfi secir*/
+p::first-letter {
+    color: #130303;
+  }
+/* 14.//pdeki ilk setiri secir*/
+p::first-line {
+    color: #130303;
+  }
+/* 15.// pden evvele soz yazir */
+p.one::before{
+    content: "salam ";
+}
+/* 16.// pden soraya soz yazir */
+p.one::after{
+    content: "682A3";
+}
+/* 17.// siyahinin siralanmasini isareleyir */
+::marker {
+    color: red;
+    font-size: 23px;
+  }
+/* 18.// one classinda nevarsa secende rengi ag olur */
+p.one::selection{
+    color: rgb(255, 255, 255);
+  }
+  /* 19.// atribut selectoru */
+  a[target] {
+    background-color: rgb(3, 3, 3);
+    color: aliceblue;
+  }
+  /* 20.//sonuncu listi secir */
+  li:last-of-type {
+    background-color: rgb(255, 255, 255);
+  }
