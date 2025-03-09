@@ -1,0 +1,15 @@
+.msc{
+    background-image: url(sekiller/task4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+.hero{
+    border: 1px solid #f5f5f5;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 10px;
+    width: 500px;
+    color: antiquewhite;
+}
