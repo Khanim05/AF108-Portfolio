@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.umumi{
+    display: flex;
+    gap: 60px;
+}
+.txt{
+    border: 3px solid red;
+    border-radius: 90px;
+    background-color: aquamarine;
+    padding: 50px;
+
+}
+.msc{
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.txd{
+    border: 3px solid red;
+    padding:50px;
+    border-radius: 25% 10%;
+    background-color: chocolate;
+
+
+}
+.test{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.rock{
+    display: flex;
+    gap: 150px;
+    margin-top: 50px;
+}
+.nm{
+    border: 3px solid red;
+    padding: 50px;
+    border-radius: 35px 10em;
+    background-color: chartreuse;
+}
+.hero{
+    font-weight: bold;
+    margin-top: 20px;
+}
+.mn{
+    border: 3px solid red;
+    padding: 50px;
+    border-radius: 50px 50% ;
+    background-color: lightblue;
+}
+.goal{
+    font-weight: bold;
+    margin-top: 20px;
+}
