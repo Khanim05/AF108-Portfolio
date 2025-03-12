@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.sidebar{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+form{
+    margin-top: 25px;
+}
+form input{
+    position: relative;
+}
+form span{
+    position: absolute;
+    left: 210px;
+    top: 35px;
+}
+input[type=text]{
+    width: 200px;
+    height:20px;
+    padding: 16px;
+    font-size: 11px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+ul{
+    font-size: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ul span{
+    font-weight: bold;
+}
+ul i{
+    position: absolute;
+    right: 1120px;
+    top: 5px;
+    color: #2c2c2c;
+
+}
+ul li{
+    list-style-type: none;
+    color: #9c9c9c;
+}
+ul hr{
+   width:200px;
+}
+.list1 li{
+border: 1px solid #9c9c9c;;
+width: 50px;
+text-align: center;
+color: black;
+height: 25px;
+padding: 2px;
+}
+.list2{
+    display: flex;
+    flex-direction: row;
+}
+.list3 li{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.color1{
+    background-color: black;
+}
+.color2{
+    background-color: rgb(3, 3, 37);
+}.color3{
+    background-color: rgb(224, 154, 3);
+}
+.color4{
+    background-color: rgb(0, 97, 0);
+}
+.color5{
+    background-color: rgb(55, 82, 2);
+}
+.color6{
+    background-color: palevioletred;
+}
+.color7{
+    background-color: plum;
+}
+.color8{
+    background-color: rgb(255, 0, 0);
+}
+.color9{
+    background-color: rgb(196, 194, 192);
+}
+.list4 li{
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(181, 206, 228);
+}
+
+/* main hisse start */
+.container{
+    display: flex;
+    gap: 40px;
+}
+main{
+    margin-top: 50px;
+}
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+.product_list{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+.product_list .product{
+width: calc(33.33%-20px);
+margin-bottom: 20px;
+background-color: #becfdf;
+padding: 20px;
+border: 1px solid #ddd;
+text-align: center;
+}
+img{
+    width: 100%;
+    height: auto;
+    min-width: 150px;
+}
+
+.card h3{
+    margin: 10px 0;
+}
