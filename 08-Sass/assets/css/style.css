@@ -169,6 +169,8 @@
   }
   .nav {
     justify-content: space-between;
-    padding: 0 50px;
+  }
+  .container {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
