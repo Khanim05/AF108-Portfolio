@@ -218,8 +218,54 @@ input, textarea {
    font-size: 17px;
     border-bottom: none;
 }
-
-
 textarea {
     height:100px;
+}
+
+#footer_area{
+    height: 250px;
+    background-color: hsl(240, 23%, 26%)
+}
+.container1{
+    max-width: 1200px;
+    margin: 0 250px;
+}
+.footer{
+    display: flex;
+    gap: 50px;
+    height: 100%;
+    align-items: center;
+    color:white
+}
+.footer p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.icon{
+    font-size: 40px;
+}
+a{
+    color: hsl(240, 26%, 7%);
+    font-weight: bold;
+}
+.txt1{
+    margin-top: 16px;
+    
+}
+.txt3{
+    margin-top: 38px;
+}
+#end_area{
+    height:80px;
+    background-color:hsl(240, 26%, 7%);
+}
+.end{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    height: 100%;
+    text-align: center;
+}
+.end p{
+    padding: 30px 0;
 }

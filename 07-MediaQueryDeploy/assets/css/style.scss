@@ -488,10 +488,13 @@ html,body{
         display: block;
     }
      .nav{
-        // width: 100%;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
         padding: 0 40px;
     }
     #main_area .container{
+        width: 100%;
         flex-direction: column;
         .card_area{
             flex-direction: column;
@@ -499,6 +502,7 @@ html,body{
         .card img{
             height: 700px;}}
     #men{
+        width: 100%;
         h1,p{
             text-align: center;
         }
@@ -508,6 +512,7 @@ html,body{
         align-items: center;
  }}
 #women{
+    width: 100%;
     h1,p{
         text-align: center;
     }
@@ -517,6 +522,7 @@ html,body{
     align-items: center;
 }}
 #kids{
+    width: 100%;
     h1,p{
         text-align: center;
     }
@@ -526,6 +532,7 @@ html,body{
     align-items: center;
 }}
 #product{
+    width: 100%;
     .row{
         display: flex;
         flex-direction: column;
@@ -562,6 +569,7 @@ html,body{
             width: 100%;
             height: 100%; }}}
 #social_area{
+    width: 100%;
     .social{
         text-align: center;
         .social_cards{
@@ -573,6 +581,7 @@ html,body{
                 width: 100%;
                 height: 100%;}}}}
 #form_area{
+    width: 100%;
     .row{
         display: flex;
         flex-direction: column;
@@ -596,6 +605,7 @@ html,body{
     height: 700px;
     width: 100%;
     .footer{
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap:1px;

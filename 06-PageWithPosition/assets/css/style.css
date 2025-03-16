@@ -145,3 +145,17 @@ img{
 .card h3{
     margin: 10px 0;
 }
+.image{
+    position: relative;
+}
+.sale{
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    width: 80px;
+    height: 20px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
