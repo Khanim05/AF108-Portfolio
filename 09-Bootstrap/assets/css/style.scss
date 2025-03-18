@@ -1,0 +1,54 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#area{
+  height: 100vh;
+  width: 100%;
+  background-image: url(../image/navfoto.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  #navbar_area{
+    height: 100px;
+  } 
+}
+#area_{
+    height: 500px;
+}
+#about{
+    height: 300px;
+    width: 100%;
+}
+#project_area{
+  width: 100%;
+  height: 500px;
+  background-color: rgb(235, 233, 233);
+} 
+.image{
+  width: 350px;
+  height: 350px;
+}
+#test_area{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/background.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  h1{
+   padding: 50px 0;
+  }
+   .test{
+    margin-left: 160px;
+    background-color: rgb(158, 96, 158);
+   }
+   img{
+    margin-left: 500px;
+   }
+}
+i{
+  margin-left: 170px;
+}
