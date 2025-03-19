@@ -10,25 +10,30 @@
   </head>
   <body>
     <header id="area">
-        <section id="navbar_area">
-        <nav class="navbar navbar-default h-100">
-            <div class="container justify-content-between h-auto">
-              <div class="navbar-header align-items-center">
-                <div class="navbar-brand text-light fs-1 fst-italic"> illdy</div>
+        <section id="navbar_area" class="h-auto ">
+          <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-between align-items-center">
+            <div class="container">
+             
+              <a class="navbar-brand text-light fs-1 fst-italic" href="#">illdy</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link text-light fs-5 fw-light" href="#">Home</a></li>
+                  <li class="nav-item"><a class="nav-link text-light fs-5 fw-light" href="#">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link text-light fs-5 fw-light" href="#">Testimonials</a></li>
+                  <li class="nav-item"><a class="nav-link text-light fs-5 fw-light" href="#">Services</a></li>
+                  <li class="nav-item"><a class="nav-link text-light fs-5 fw-light" href="#">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link text-light fs-5 fw-light" href="#">Our Team</a></li>
+                  <li class="nav-item"><a class="nav-link text-light fs-5 fw-light" href="#">Contact Us</a></li>
+                </ul>
               </div>
-              <ul class="nav navbar-nav flex-row gap-4">
-                <li><a href="#" class="text-decoration-none text-light fs-5 fw-light">Home</a></li>
-                <li><a href="#" class="text-decoration-none text-light fs-5 fw-light">Portofolio</a></li>
-                <li><a href="#" class="text-decoration-none text-light fs-5 fw-light">Testimonials</a></li>
-                <li><a href="#" class="text-decoration-none text-light fs-5 fw-light">Services</a></li>
-                <li><a href="#" class="text-decoration-none text-light fs-5 fw-light">Blog</a></li>
-                <li><a href="#" class="text-decoration-none text-light fs-5 fw-light">Our Team</a></li>
-                <li><a href="#" class="text-decoration-none text-light fs-5 fw-light">Contact Us</a></li>
-              </ul>
-            </div>
+          </div>
           </nav>
+       
       </section>
-      <section id="area_">
+      <section id="area_" class="d-flex align-items-center justify-content-center text-center flex-column text-light">
         <div class="text h-100  d-flex flex-row align-items-center justify-content-center text-center gap-3 ">
             <div class="texts">
             <span class="fw-bold fs-1 text-light">Clean</span>
@@ -46,7 +51,7 @@
       </section>
     </header>
     <main>
-        <section id="about" class="t-20">
+        <section id="about" class="t-20 w-100">
             <div class="container h-100 mt-5">
             <div class="text-center">
                 <h1 class="fw-bold">About</h1>
@@ -60,7 +65,7 @@
                 <button class="bg-info btn btn-outline-light fw-bold">86%</button>
 
             </div>
-            <div class="forms d-flex gap-5">
+            <div class="forms d-flex gap-5 justify-content-around">
                 <input type="range" class="form-range w-25" id="">
                 <input type="range" class="form-range accent w-25" id="">
                 <input type="range" class="form-range accent w-25" id="">
@@ -77,27 +82,27 @@
             <h1 class="text-center fw-bold mt-5">Projects</h1>
             <div class="text-center">You'll love our work. Check it out!</div>
             </div>
-          <div class="d-flex image mt-5">
-            <img src="assets/image/project1.jpg" alt="">
-            <img src="assets/image/project2.jpg" alt="">
-            <img src="assets/image/project3.jpg" alt="">
-            <img src="assets/image/project 4.jpg" alt="">
+          <div class="d-flex image mt-5 justify-content-center gap-5">
+            <img src="assets/image/project1.jpg" class="w-100 h-auto" alt="">
+            <img src="assets/image/project2.jpg" class="w-100 h-auto" alt="">
+            <img src="assets/image/project3.jpg" class="w-100 h-auto" alt="">
+            <img src="assets/image/project 4.jpg" class ="w-100 h-auto">
         </div>
     </section> 
     <section id="test_area">
         <div class="container">
             <h1 class="text-center fw-bold text-light mt-5">Testimonials</h1>
-            <img src="assets/image/iconic.jpg" class="rounded-circle justify-content-center" alt="">
-            <div class="w-75 h-75 text-light fw-bold test p-4 mt-5">Awesome theme with great design and awesome support. If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, Illdy might be exactly what you need. It is a slick theme with a lot of of features to choose from.</div>
+            <img src="assets/image/iconic.jpg" class="rounded-circle justify-content-cente d-block m-auto " alt="">
+            <div class="w-75 h-75 text-light fw-bold test p-4 mt-5 hero">Awesome theme with great design and awesome support. If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, Illdy might be exactly what you need. It is a slick theme with a lot of of features to choose from.</div>
             <h5 class="text-center fw-bold text-light mt-5">Mike Kuller</h5>
         </div>
     </section>
 
-    <section id="service_area">
+    <section id="service_area " class="text-center">
         <div class="container">
             <h1 class="text-center fw-bold mt-5">Services</h1>
             <p class="opacity-75 text-center">In order to help you grow your business, our carefully selected experts can advise you in in the following areas: </p>
-             <div class="d-flex gap-5">
+             <div class="d-flex gap-5 justify-content-center">
             <div class="col-sm-4">
                 <i class="fa fa-pencil fs-2 text-danger mt-3"></i>
                 <h3 class="fw-bold text-center mt-3 text-danger">Web Design</h3>
@@ -110,11 +115,50 @@
              </div>
              <div class="col-sm-4">
                 <i class="fa fa-code fs-2 text-warning mt-3"></i>
-                <h3 class="fw-bold text-center mt-3 text-warning">WEB DEVELOPMENT</h3>
-                <p class="opacity-75 mt-3">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...</p>
+                <h3 class="fw-bold text-center mt-3 text-warning">Hello world!</h3>
+                <p class="opacity-75 mt-3">
+                  Welcome to colorlib.com. This is our first post around Illdy WordPress theme. Now show that you can make out of it.…</p>
              </div></div>
         </div>
     </section>
+   <section id="cards">
+    <div class="container">
+      <h1 class="text-center fw-bold mt-5 text-light">Latest</h1>
+      <div class="text-center opacity-75 text-light">If you are interested in the latest articles in the industry, take a sneak peek at our blog. You have nothing to loose!</div>
+      <div class="d-flex gap-5 justify-content-evenly mt-5">
+    <div class="card" style="width: 18rem; height: 500px;">
+      <img src="https://149842022.v2.pressablecdn.com/illdy/wp-content/uploads/sites/58/2016/02/photo-1449168013943-3a15804bb41c-360x213.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">We Have Made Illdy Theme SEO Friendly</h5>
+        <p class="card-text mt-4">Illdy One Page WordPress theme is fully SEO friendly and is ready to help you to achieve the highest rankings…</p>
+        <a href="#" class="btn btn-primary bg-transparent text-warning btn-outline-warning fw-bold fs-7">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; height: 500px;">
+      <img src="https://149842022.v2.pressablecdn.com/illdy/wp-content/uploads/sites/58/2016/02/photo-1450101215322-bf5cd27642fc-360x213.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Stunning One Page WordPress Theme For Masses</h5>
+        <p class="card-text mt-4">
+          This theme is not just free, it is free for private and commercial use since it is licensed under GPL…									</p>
+        <a href="#" class="btn btn-primary bg-transparent text-warning btn-outline-warning fw-bold fs-7 mt-5">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; height: 500px;">
+      <img src="https://149842022.v2.pressablecdn.com/illdy/wp-content/uploads/sites/58/2016/02/photo-1447687643809-e05fd462f350-360x213.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hello World!</h5>
+        <p class="card-text mt-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary bg-transparent text-warning btn-outline-warning fw-bold fs-7 mt-5">Go somewhere</a>
+      </div>
+    </div>
+    </div>
+    </div>
+
+   </section>
+
+
+
+
 </main>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

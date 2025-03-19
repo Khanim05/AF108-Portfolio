@@ -1,9 +1,13 @@
 *,
-::after,
-::before {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#navbar_area {
+  padding: 10px 0;
 }
 
 #area {
@@ -14,28 +18,23 @@
   background-attachment: fixed;
   background-size: cover;
 }
-#area #navbar_area {
-  height: 100px;
-}
 
 #area_ {
   height: 500px;
 }
 
-#about {
-  height: 300px;
-  width: 100%;
-}
-
 #project_area {
   width: 100%;
-  height: 500px;
   background-color: rgb(235, 233, 233);
+  padding: 50px 0;
+}
+#project_area img {
+  max-width: 300px;
+  border-radius: 10px;
 }
 
-.image {
-  width: 350px;
-  height: 350px;
+#about {
+  padding: 50px 0;
 }
 
 #test_area {
@@ -44,18 +43,58 @@
   background-image: url(../image/background.jpg);
   background-repeat: repeat;
   background-size: cover;
-}
-#test_area h1 {
-  padding: 50px 0;
-}
-#test_area .test {
-  margin-left: 160px;
-  background-color: rgb(158, 96, 158);
-}
-#test_area img {
-  margin-left: 500px;
+  text-align: center;
+  padding: 50px 20px;
 }
 
-i {
-  margin-left: 170px;
+#service_area {
+  width: 100%;
+  padding: 50px 0;
+}
+
+#cards {
+  height: 700px;
+  background-color: rgb(7, 68, 83);
+}
+
+@media screen and (max-width: 996px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+  }
+  #area_ {
+    height: auto;
+    padding: 50px 20px;
+  }
+  .image {
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    max-width: 90%;
+  }
+  .forms {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-range {
+    width: 80%;
+  }
+  #test_area {
+    height: auto;
+    padding: 50px 10px;
+  }
+  #test_area .hero {
+    text-align: center;
+  }
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-sm-4 {
+    max-width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
