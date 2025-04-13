@@ -66,7 +66,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 isLogined: false,
                 attemps:0,
                 lockUntil: null,
-                id
+                id,
+                wishlist: [],
               }
               users.push(newobj)
               localStorage.setItem("users",JSON.stringify(users))
