@@ -31,7 +31,7 @@ body {
 .checksTrue{
   position: absolute;
   left: 350px;
-  bottom: 210px;
+  bottom: 230px;
   color: green;
   display: none;
 }
