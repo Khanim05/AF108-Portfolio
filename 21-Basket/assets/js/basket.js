@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
             let price=document.createElement("p")
             price.classList.add("price")
-            price.textContent=product.price * product.count
+            price.textContent=(product.price*product.count).toFixed(1)
 
 
             let countArea=document.createElement("div")
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         if (basketproduct) {
             basketproduct.count--
             countElem.textContent=basketproduct.count
-            priceElem.textContent=basketproduct.count* basketproduct.price
+            priceElem.textContent=(basketproduct.count* basketproduct.price).toFixed(1)
         }
         
         if (basketproduct.count==1) {
@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             btnelement.closest(".basket-item").remove()
             users[userIndex].basket = basket;
             localStorage.setItem("users", JSON.stringify(users)); 
+            toast("Basketdən 1 məhsul silindi")
         }
         total()
     }
@@ -146,6 +147,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         localStorage.setItem("users", JSON.stringify(users));
         total()
         UserbasketItem()
+        toast("Basket təmizləndi")
     }
 
 
@@ -156,3 +158,15 @@ document.addEventListener("DOMContentLoaded",()=>{
 total()
 UserbasketItem()
 })
+let toast=(text)=>{
+    Toastify({
+        text: `${text}`,
+        duration:3000,
+        position:"right",
+        stopOnFocus: true,
+        style:{
+            background:"linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick:function () {} 
+    }).showToast()
+}
