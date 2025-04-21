@@ -1,11 +1,14 @@
 import Navbar from '../navbar/Navbar';
+import Main from '../main/Main';
+import '../header/Header.css'
+
 
 const Header=()=>{
        return(
-        <div className="div" style={{background:"black",padding:"40px"}}>
-            <Navbar/>
+            <div className='background'>
+              <Navbar/>
+              <Main/>
             </div>
-        
        )
 }
 

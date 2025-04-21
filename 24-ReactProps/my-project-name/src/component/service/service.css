@@ -1,0 +1,27 @@
+.service_area{
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.icon_area{
+    margin-top: 20px;
+    font-size: 70px;
+    margin-left: 120px;
+    color: #ffc800;
+    
+}
+.name_area{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.desc_area{
+    text-align: justify;
+    width: 350px;
+    margin-top: 20px;
+    opacity: 0.8;
+    font-size: 18px;
+}

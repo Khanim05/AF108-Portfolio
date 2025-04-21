@@ -1,0 +1,71 @@
+.product_area{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+.image{
+    width: 340px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.image_area {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+
+
+  .image_area:hover .image {
+    transform: scale(1.1);
+  }
+  
+
+  .image_area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 320px;
+    background-color: rgba(241, 207, 53, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+  
+  
+  .image_area:hover::before {
+    opacity: 1;
+  }
+  
+  
+  .hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+  }
+  
+
+  .image_area:hover .hover {
+    display: block;
+    font-size: 40px;
+    color: white;
+  }
+  
+.name{
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+.desc{
+    margin-top: 10px;
+    opacity: 0.8;
+}

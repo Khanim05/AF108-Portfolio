@@ -2,9 +2,9 @@ import React from 'react'
 
 const NavbarLogo = () => {
   return (
-    <div className='Logo'>
-    <h2>Start Bootstrap</h2>
-    </div>
+    
+    <img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/navbar-logo.svg" alt="" className='logo' />
+    
   )
 }
 

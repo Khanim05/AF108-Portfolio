@@ -1,0 +1,15 @@
+
+.Customstyle{
+     background-color:#ffc800;
+     padding: 20px 40px;
+     color: white ;
+     border: none;
+    font-weight:bold;
+    border-radius:4px;
+    font-size:20px;
+    margin-top:20px;
+}
+.Customstyle:hover{
+    border: 1px solid #ffc800 ;
+    background-color: transparent;
+}
