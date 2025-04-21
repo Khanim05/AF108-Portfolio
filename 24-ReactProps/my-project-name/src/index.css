@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+li{
+    list-style: none;
+}
