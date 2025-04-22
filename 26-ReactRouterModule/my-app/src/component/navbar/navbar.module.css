@@ -1,0 +1,25 @@
+.linkArea{
+    display: flex;
+    gap: 10px;
+}
+.linkArea a{
+   text-decoration: none;
+   color: white;
+   font-size: 17px;
+}
+.linkArea a:hover{
+    color: black;
+}
+.navbar_area{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.logo{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.back{
+    background-color: gray;
+    padding: 20px;
+}

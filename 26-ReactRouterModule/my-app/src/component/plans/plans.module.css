@@ -1,0 +1,67 @@
+.plans_area{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin-left: 170px;
+}
+.title{
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0.7;
+    margin-left: 20px;
+}
+.price{
+    opacity: 0.9;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.mo{
+    font-size: 18px;
+    opacity: 0.7;
+}
+.icon{
+    font-size: 9px;
+    color: blue;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+.icon span{
+    color: black;
+    font-size: 15px; 
+    margin-left: 5px; 
+}
+.nocheck{
+    margin-top: 2px;
+    margin-left: 20px;
+}
+.nocheck span{
+   opacity: 0.8;
+}
+
+.button{
+    margin-left: 20px;
+    margin-top: 90px;
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid blue;
+    color: blue;
+
+}
+.button:hover{
+    background: blue;
+    color: white;
+}
+.card{
+    width: 250px;
+    height: 400px;
+    background: rgb(245, 242, 242);
+    border: 1px solid rgb(85, 85, 85);
+    border-radius: 6px;
+}
+
+
+
+

@@ -1,0 +1,28 @@
+.product_area{
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+.icon{
+    font-size: 40px;
+    margin-left: 80px;
+    color: blue;
+}
+.title{
+    font-size:25px
+}
+.desc{
+    text-align: justify;
+    width: 300px;
+    margin-top: 10px;
+    line-height: 130%;
+    opacity: 0.9;
+    font-size: 18px;
+}
+.text{
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+}
