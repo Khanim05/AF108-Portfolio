@@ -21,6 +21,16 @@
     border-radius: 5px;
     flex: 1;
   }
+
+  .edit_area{
+    padding: 8px;
+    border: 1px solid #7bc9fd;
+    border-radius: 5px;
+    color: #023d79;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex: 1;
+  }
   
   button {
     padding: 8px 12px;

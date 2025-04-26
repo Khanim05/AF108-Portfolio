@@ -76,12 +76,14 @@ const UseReduce = () => {
               placeholder='Edit your name'
               onChange={(e) => SetEditName(e.target.value)}
               value={editName}
+              className={styles.edit_area}
             />
             <input
               type="text"
               placeholder='Edit your surname'
               onChange={(e) => SetEditSurname(e.target.value)}
               value={editSurname}
+              className={styles.edit_area}
             />
             <button onClick={()=>{
                 dispatch({type:"edit",id:editUsers,newName:editName,newSurname:editSurname})
