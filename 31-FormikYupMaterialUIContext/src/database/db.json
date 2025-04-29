@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": "da9e",
+      "name": "xanim",
+      "surname": "azimova",
+      "username": "Khanim005_",
+      "email": "xanimazimova05@gmail.com",
+      "password": "Test123!",
+      "confirmPassword": "Test123!",
+      "isLogined": false
+    },
+    {
+      "id": "e820",
+      "name": "xanimm",
+      "surname": "azimova",
+      "username": "Khanim005_",
+      "email": "xanimazimova05@gmail.com",
+      "password": "Test123!",
+      "confirmPassword": "Test123!",
+      "isLogined": false
+    },
+    {
+      "id": "1639",
+      "name": "Xanim_azimova05",
+      "surname": "azimova",
+      "username": "Niko_050",
+      "email": "xanimazimova05@gmail.com",
+      "password": "Test123!",
+      "confirmPassword": "Test123!",
+      "isLogined": false
+    }
+  ]
+}
