@@ -1,0 +1,67 @@
+{
+  "posts": [
+    {
+      "id": "b484"
+    },
+    {
+      "id": "6523",
+      "name": "xanimm",
+      "surname": "azimova",
+      "username": "Niko_050",
+      "email": "xanimazimova05@gmail.com",
+      "password": "Test123!",
+      "confirmPassword": "Test123!",
+      "isLogined": false
+    },
+    {
+      "id": "6096",
+      "name": "xanimm",
+      "surname": "azimova",
+      "username": "Niko_050",
+      "email": "xanimazimova05@gmail.com",
+      "password": "Test123!",
+      "confirmPassword": "Test123!",
+      "isLogined": false
+    },
+    {
+      "id": "f40d",
+      "name": "wwwwww",
+      "surname": "dhjdwbklwq",
+      "username": "niko_66s",
+      "email": "niko66@gmail.com",
+      "password": "test123!",
+      "confirmPassword": "test123!",
+      "isLogined": false
+    },
+    {
+      "id": "1d43",
+      "name": "Xanim_azimova04",
+      "surname": "azimova4",
+      "username": "Ggulnar_04544",
+      "email": "xanimazimova0544@gmail.com",
+      "password": "test123!",
+      "confirmPassword": "test123!",
+      "isLogined": false
+    },
+    {
+      "id": "cab4",
+      "name": "Xanim_azimova0533",
+      "surname": "azimova33",
+      "username": "Ggulnar_04533",
+      "email": "xanimazimova0335@gmail.com",
+      "password": "test123!T",
+      "confirmPassword": "test123!T",
+      "isLogined": false
+    },
+    {
+      "id": "c0f5",
+      "name": "Xanim_azimova05ww",
+      "surname": "azimovwsa",
+      "username": "Ggulnar_2204533",
+      "email": "xanimazimova445@gmail.com",
+      "password": "test123!",
+      "confirmPassword": "test123!",
+      "isLogined": false
+    }
+  ]
+}
