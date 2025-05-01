@@ -3,9 +3,11 @@ import './wishlistpage.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { removeAll, removeItem } from '../redux/features/wishlist'
 
+
 const WishlistPage = () => {
   let {wishlistProducts}=useSelector((p)=>p.wishlist)
   const dispatch=useDispatch()
+
   return (
     <div className="wishlist">
        {

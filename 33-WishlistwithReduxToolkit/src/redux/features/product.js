@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import axios from 'axios';
 
 
-let url="http://localhost:3001/product"
+let url="http://localhost:3000/product"
 
 export const getallproducts = createAsyncThunk(
     'product/getallproducts',
