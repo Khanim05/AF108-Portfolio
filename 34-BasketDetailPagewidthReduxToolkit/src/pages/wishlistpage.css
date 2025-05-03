@@ -47,6 +47,15 @@
      height:40px;
      border-radius:4px;
      color:white;
+     font-weight: bold;
+  }
+  .delAll{
+    background: rgb(207, 33, 33);
+    border:none;
+     width:140px;
+     height:40px;
+     border-radius:4px;
+     color:white;
      font-weight:bold;
   }
      

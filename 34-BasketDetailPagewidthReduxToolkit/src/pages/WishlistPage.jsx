@@ -25,7 +25,7 @@ const WishlistPage = () => {
     </div>
         )
        }
-      <button className='btn' onClick={()=>dispatch(removeAll())}>Delete All</button>
+      <button className='delAll' onClick={()=>dispatch(removeAll())}>Delete All</button>
   </div>
   )
 }

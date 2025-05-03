@@ -6,11 +6,13 @@ import { FaHeart } from "react-icons/fa";
 import { updateWishlist } from '../../redux/features/wishlist';
 import { getallproducts } from '../../redux/features/product';
 import { updateBasket } from '../../redux/features/basket';
+import { useNavigate } from 'react-router-dom';
 
 function Products() {
   const dispatch = useDispatch();
   const { allProducts } = useSelector((p) => p.product);
   const { wishlistProducts } = useSelector((p) => p.wishlist);
+  let navigate=useNavigate()
   
   useEffect(() => {
     dispatch(getallproducts());
@@ -33,7 +35,9 @@ function Products() {
         
 
         return (
-          <div key={p.id} style={{ position: "relative" }}>
+          <div key={p.id} style={{ position: "relative" }}
+          onClick={()=>navigate(`/productDetails/${p.id}`)}
+          >
             <Card
               style={{
                 width: '18rem',
@@ -43,9 +47,9 @@ function Products() {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                gap: "10px",
                 border: "1px solid gray",
                 borderRadius: "5px"
+              
               }}
             >
               <FaHeart 
@@ -57,9 +61,11 @@ function Products() {
                   right: "10px",
                   cursor: "pointer"
                 }}
-                onClick={() => dispatch(updateWishlist(p))}
+                onClick={(e) =>{
+                  e.stopPropagation();
+                  dispatch(updateWishlist(p))}}
               />
-              <Card.Img variant="top" src={p.image} style={{ width: "200px", height: "240px" }} />
+              <Card.Img variant="top" src={p.image} style={{ width: "200px", height: "270px", padding:"20px 0"}} />
               <Card.Body>
                 <Card.Title>{p.title.slice(0, 20)}</Card.Title>
                 <Card.Text>${p.price}</Card.Text>
@@ -75,7 +81,9 @@ function Products() {
                     fontWeight: "bold",
                     fontSize: "14px"
                   }}
-                  onClick={()=>dispatch(updateBasket(p))}
+                  onClick={(e)=>{
+                    e.stopPropagation();
+                    dispatch(updateBasket(p))}}
                 >
                   Add Basket
                 </Button>

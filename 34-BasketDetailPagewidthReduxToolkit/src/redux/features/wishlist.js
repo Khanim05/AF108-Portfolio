@@ -22,11 +22,11 @@ const wishlist = createSlice({
         },
         removeItem:(state,action)=>{
           state.wishlistProducts=state.wishlistProducts.filter((p)=>p.id!=action.payload.id)
-          toast.info("Mehsul silindi")
+          toast.info("Mehsul wishlistden silindi")
         },
         removeAll:(state)=>{
           state.wishlistProducts=[]
-          toast.info("Wishlist temizlendi")
+          toast.info("Wishlist Temizlendi")
         }
     }
    

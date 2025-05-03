@@ -6,6 +6,7 @@ import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage';
 import WishlistPage from './pages/WishlistPage';
 import BasketPage from './pages/BasketPage'
+import ProductDetailsPage from './pages/ProductDetailsPage';
 
 
 const App=()=>{
@@ -16,7 +17,9 @@ const App=()=>{
       children:[
         {path:'/',element:<HomePage/>},
         {path:'wishlist',element:<WishlistPage/>},
-        {path:'basket',element:<BasketPage/>}
+        {path:'basket',element:<BasketPage/>},
+        {path:'productDetails/:id', element:<ProductDetailsPage/>}
+
       ]
 
     },

@@ -9,6 +9,9 @@ import {Link} from 'react-router-dom'
 const Wrapper = () => {
 
 const {wishlistProducts}=useSelector((prod)=>prod.wishlist)
+const {basketProducts}= useSelector((p)=>p.basket)
+let count=basketProducts.reduce((acc,item)=>acc+item.count,0)
+
   return (
     <div style={{
          display:"flex", 
@@ -29,7 +32,7 @@ const {wishlistProducts}=useSelector((prod)=>prod.wishlist)
           <sup style={{
             fontWeight:"bold",
             fontSize:"18px",
-            marginLeft:"3px"}}>0</sup>
+            marginLeft:"3px"}}>{count}</sup>
           </Link>
         
         

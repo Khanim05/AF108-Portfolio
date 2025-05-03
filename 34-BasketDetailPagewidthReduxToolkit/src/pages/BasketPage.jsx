@@ -1,10 +1,14 @@
-import React from 'react'
+
 import './basketpage.css'
-import { useSelector } from 'react-redux'
+import { useSelector,useDispatch } from 'react-redux'
+import { decrement, delAll, delItem, increment } from '../redux/features/basket'
 
 const BasketPage = () => {
 
   let {basketProducts}= useSelector((p)=>p.basket)
+  let dispatch=useDispatch()
+
+  let total=basketProducts.reduce((acc,sum)=>acc+(sum.price*sum.count),0).toFixed(2)
 
   return (
     
@@ -16,18 +20,43 @@ const BasketPage = () => {
                   
                   <img src={item.image} alt="" />
                   </div>
-                  <h6 className="title">{item.title}</h6>
+                  <h6 className="title">{item.title.slice(0,20)}</h6>
                   <p className="category">{item.category}</p>
-                  <p className="price">{item.price}</p>
+                  <p className="price">$ {(item.price*item.count).toFixed(2)}</p>
                   <div className="count-area">
-                    <button className="minus-btn" disabled>-</button>
+                    <button className="minus-btn" 
+                    disabled={item.count==1}
+                    onClick={()=>dispatch(decrement(item.id))}
+                    >
+                      -
+                    </button>
                     <p className="count">{item.count}</p>
-                    <button className="plus-btn">+</button>
+                    <button 
+                    className="plus-btn"
+                    onClick={()=>dispatch(increment(item.id))}
+                    >+
+                    </button>
                   </div>
-                  <button className="btn btn-danger">Remove</button>
+                  <button 
+                  className="delItem" 
+                  onClick={()=>dispatch(delItem(item.id))}
+                  >Remove
+                  </button>
                 </div>
                 ))
               }
+              <div className="top_area">
+                 <button 
+              className="delItem"
+              onClick={()=>dispatch(delAll())}
+              >
+              Delete All
+              </button>
+              <p>
+                Total: ${`${total}`}
+              </p>
+              </div>
+             
 
             </div>
     

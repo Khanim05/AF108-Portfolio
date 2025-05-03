@@ -1,16 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  header {
-    background-color: #4caf50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
+
   .basket {
     display: flex;
     flex-direction: column;
@@ -19,6 +7,7 @@
   }
   
   .basket-item {
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,4 +105,34 @@
     text-align: center;
     font-size: 1.5rem;
     margin-top: 20px;
+  }
+  .delItem{
+    background: rgb(207, 33, 33);
+    border:none;
+     width:140px;
+     height:40px;
+     border-radius:4px;
+     color:white;
+     font-weight:bold;
+  }
+  .delItem:hover{
+    border: 2px solid rgb(207, 33, 33);
+    background-color: transparent;
+    color: black;
+    border-radius: 6px;
+  }
+  .top_area{
+    display: flex;
+    justify-content: space-between;
+  }
+  .top_area p{
+    background: rgb(207, 33, 33);
+    border:none;
+     width:140px;
+     height:40px;
+     border-radius:4px;
+     color:white;
+     font-weight:bold;
+     padding: 8px;
+     text-align: center;
   }
