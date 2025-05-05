@@ -1,0 +1,79 @@
+/* useReduce.module.css */
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .top_area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+  }
+
+  .edit_area{
+    padding: 8px;
+    border: 1px solid #7bc9fd;
+    border-radius: 5px;
+    color: #023d79;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex: 1;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #125aa0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #f1f1f1;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li p {
+    margin: 0;
+  }
+  
+  li div {
+    display: flex;
+    gap: 10px;
+  }
+  
+.btn:hover{
+  background-color: #023d79;
+  color: black;
+}
+
+  
+  

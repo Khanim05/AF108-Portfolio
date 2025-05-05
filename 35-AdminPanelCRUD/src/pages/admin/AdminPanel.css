@@ -1,0 +1,20 @@
+.editItem{
+    width: 170px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: rgba(218, 100, 3, 0.993);
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+}
+.createItem{
+    width: 170px;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(96, 134, 19);
+    
+}
