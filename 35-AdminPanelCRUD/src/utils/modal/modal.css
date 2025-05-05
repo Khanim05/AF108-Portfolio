@@ -2,3 +2,19 @@ form{
    display: flex;
    flex-direction: column;
 }
+form input{
+   border-radius: 3px;
+   border: 1px solid black;
+   padding: 8px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+form textarea{
+   width: 350px;
+   padding: 8px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+form label{
+   padding: 3px;
+   font-weight: bold;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

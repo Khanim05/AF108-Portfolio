@@ -23,19 +23,23 @@ const ProductDetailsPage = () => {
                         <h4 className="product-title">{findProd.title.slice(0,20)}</h4>
                         <p className="product-category">category: {findProd.category}</p>
                         <p className="product-price">${findProd.price}</p>
-                        <p className="product-desc">${findProd.description}</p>
-                    
-                     <div className="product-rating">
+                        <p className="product-desc">{findProd.description}</p>
+                    {
+                        findProd.rating && (
+                            <div className="product-rating">
                         <span>⭐{findProd.rating.rate}</span>
                         <span>{findProd.rating.count} (reviews)</span>
                     </div>
+                        )
+                    }
+                     
                     <div className="quantity-selector">
                         <button className="btn-minus" 
                         disabled={basketProd?.count==1}
                         onClick={()=>dispatch(decrement(findProd.id))}
                         >-
                         </button>
-                        <p className='count'>{basketProd ? basketProd.count : 1}</p>
+                        <p className='count'>{basketProd ? basketProd.count : 0}</p>
                         <button className="btn-plus"
                         onClick={()=>dispatch(increment(findProd.id))}
                         >

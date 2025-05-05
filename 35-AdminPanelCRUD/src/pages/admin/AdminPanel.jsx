@@ -1,16 +1,60 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import '../admin/AdminPanel.css'
-import { addproducts, deleteproduct } from '../../redux/features/product'
+import { addproducts, deleteproduct, updateproduct } from '../../redux/features/product'
 import Example from '../../utils/modal/Modal'
 
 
 const AdminPanel = () => {
+    const [formdata,setData]=useState({
+      image:"",
+      title:"",
+      category:"",
+      price:"",
+      description:"",
+    })
     const {allProducts}=useSelector(p=>p.product)
     const dispatch=useDispatch()
+
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const handleChange=(e)=>{
+      const {name,value}=e.target;
+      setData({...formdata,[name]:value})
+    }
+
+
+    const handleAddproduct=(e)=>{
+      e.preventDefault()
+      dispatch(addproducts({
+        ...formdata,
+        rating:{rate:0,count:0}
+      }))
+      handleClose()
+      setData({
+      image:"",
+      title:"",
+      category:"",
+      price:"",
+      description:"",
+      })
+    }
+
+    const handleEditProduct=(e)=>{
+      e.preventDefault()
+      handleClose()
+      dispatch(updateproduct(formdata))
+      setData({
+        image:"",
+        title:"",
+        category:"",
+        price:"",
+        description:"",
+        })
+
+    }
 
   return (
     <div>
@@ -22,7 +66,7 @@ const AdminPanel = () => {
                         <div className="basket-item" key={item.id}>
                         <div className="image" >
                         
-                        <img src={item.image} alt="" />
+                        <img src={item.image} alt="Product Image" />
                         </div>
                         <h6 className="title">{item.title.slice(0,20)}</h6>
                         <p className="category">{item.category}</p>
@@ -32,7 +76,13 @@ const AdminPanel = () => {
                         onClick={()=>dispatch(deleteproduct(item.id))}
                         >Remove
                         </button>
-                        <button className='editItem'>Edit</button>
+                        <button className='editItem'
+                        type='submit'
+                        onClick={()=>{
+                          setData(item);
+                          handleShow();
+                        }}
+                        >Edit</button>
                       </div>
                       ))
                     }
@@ -40,6 +90,9 @@ const AdminPanel = () => {
                   <Example
                   show={show}
                   handleClose={handleClose}
+                  handleChange={handleChange}
+                  formdata={formdata}
+                  handleSubmit={formdata.id ? handleEditProduct : handleAddproduct}
                   />
     </div>
   )

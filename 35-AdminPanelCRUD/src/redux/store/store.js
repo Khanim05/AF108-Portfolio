@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore} from '@reduxjs/toolkit';
 import counterReducer from '../features/product'
 import wishlistReducer from '../features/wishlist'
 import basketReducer from '../features/basket'
@@ -21,8 +21,10 @@ const persistBasket=persistReducer(persistConfig,basketReducer)
 export const store =configureStore({
   reducer:
   {
-    product:persistProduct,wishlist:persistWishlist, basket:persistBasket
-  }
+    product:persistProduct,
+    wishlist:persistWishlist, 
+    basket:persistBasket,
+  },
 })
 
 
